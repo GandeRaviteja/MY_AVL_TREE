@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #020617, #000);
+    color: #e5e7eb;
+    
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #1e293b;
+    background: linear-gradient(180deg, #020617, #020617cc);
+}
+.header h1 {
+    color: #7dd3fc;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.panel {
+    background: #0f172a;
+    border-radius: 20px;
+    border: 1px solid #1e293b;
+    padding: 30px;
+}
+
+.input-panel {
+    width: 400px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.output-panel {
+    flex: 1;
+    position: relative;
+    min-height: 600px;
+}
+
+.brand-title {
+    font-size: 28px;
+    color: #7dd3fc;
+    margin-bottom: 30px;
+}
+
+.brand-title span {
+    font-size: 14px;
+    display: block;
+    color: #94a3b8;
+    font-weight: normal;
+}
+
+/* Form Styles */
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    color: #94a3b8;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Buttons */
+/* .btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: opacity 0.2s;
+} */
+ .btn {
+    padding: 8px 14px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+.build-btn {
+    background: linear-gradient(90deg, #0e176a, #000a0c);
+    color: white;
+}
+
+
+/* .reset-btn {
+    background: linear-gradient(90deg, #f43f5e, #fb7185);
+    color: white;
+} */
+.reset-btn {
+    background: #830c0c;
+    color: white;
+}
+
+.info-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #1e293b;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.info-footer ul { list-style: none; }
+
+/* Tree Visualization Nodes */
+.node {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.line {
+    position: absolute;
+    background: #334155;
+    height: 2px;
+    z-index: 1;
+    transform-origin: 0 0;
+}
+
+#tree {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    overflow: hidden; /* Prevents scrollbars if tree gets wide */
+}
