@@ -163,3 +163,9 @@ textarea {
     min-height: 500px;
     overflow: hidden; /* Prevents scrollbars if tree gets wide */
 }
+
+.input-panel h2,
+.output-panel h2 {
+    color: #a5b4fc;
+    margin-bottom: 10px;
+}
