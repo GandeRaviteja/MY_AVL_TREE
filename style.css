@@ -85,18 +85,7 @@ textarea {
     resize: none;
 }
 
-/* Buttons */
-/* .btn {
-    width: 100%;
-    padding: 15px;
-    border-radius: 12px;
-    border: none;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 15px;
-    transition: opacity 0.2s;
-} */
+
  .btn {
     padding: 8px 14px;
     margin-right: 8px;
@@ -114,10 +103,6 @@ textarea {
 }
 
 
-/* .reset-btn {
-    background: linear-gradient(90deg, #f43f5e, #fb7185);
-    color: white;
-} */
 .reset-btn {
     background: #830c0c;
     color: white;
@@ -133,7 +118,7 @@ textarea {
 
 .info-footer ul { list-style: none; }
 
-/* Tree Visualization Nodes */
+
 .node {
     position: absolute;
     width: 40px;
@@ -156,14 +141,31 @@ textarea {
     transform-origin: 0 0;
 }
 
+
+.input-panel h2,
+.output-panel h2 {
+    color: #a5b4fc;
+    margin-bottom: 10px;
+}
+
+
+.output-panel {
+    flex: 1;
+    position: relative;
+    min-height: 600px;
+
+    overflow: hidden; /* keeps scroll limited to tree */
+}
+.output-panel {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+
 #tree {
     position: relative;
     min-width: max-content;
     /* min-height: max-content; */
     padding-bottom: 60px;
-}
-.input-panel h2,
-.output-panel h2 {
-    color: #a5b4fc;
-    margin-bottom: 10px;
 }
