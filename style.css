@@ -158,12 +158,10 @@ textarea {
 
 #tree {
     position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: 500px;
-    overflow: hidden; /* Prevents scrollbars if tree gets wide */
+    min-width: max-content;
+    /* min-height: max-content; */
+    padding-bottom: 60px;
 }
-
 .input-panel h2,
 .output-panel h2 {
     color: #a5b4fc;
